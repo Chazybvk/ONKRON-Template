@@ -1,0 +1,281 @@
+.wrapperDescr{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+    min-width: 320px;
+}
+
+.wrapperDescr p, h1, h2 {
+    font-weight: 700;
+}
+
+
+.descrSections{
+    max-width: 1440px;
+    margin: 0 0 10px 0;
+}
+.descrSections:nth-of-type(1)::before{
+    pointer-events:none;
+    border-radius: 20px;
+    content:"";
+    position:absolute;
+    z-index:3;
+    top:-300px;
+    left:0;
+    width:100%;
+    height:300px;
+    -webkit-transform:translate(0px, 100%);
+    -ms-transform:translate(0px, 100%);
+    transform:translate(0px, 100%);
+    background:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0)));
+    background:-o-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0))}
+
+.descrSections:nth-of-type(3){
+    margin: 70px 0 0 0;
+}
+.descrSections:nth-of-type(1){
+    padding: 20px 0 20px 0;
+}
+.descrTextContainer:nth-child(1){
+    font-size: 40px;
+}
+
+.wrapperDescr *{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.descrTextContainer{
+ text-align: center;
+}
+
+.descrCharacteristics{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.itemCharImg {
+    height: 50px;
+    max-width: fit-content;
+}
+.characteristicsItem{
+    align-items: center;
+    min-width: 180px;
+}
+
+.secondSectionRow{
+    flex-direction: row;
+}
+.secondSectionCharImg{
+    width: 45vw;
+    height: 45vw;
+    max-width: 700px;
+    max-height: 700px;
+    margin: 10px;
+}
+.thirdSectionRow{
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0 40px 0;
+}
+.thirdSectionItem{
+    margin: 20px;
+    font-size: 30px;
+    max-width: 400px;
+}
+
+.thirdSectionItem p{
+    margin-bottom: 20px;
+}
+
+.special .descrTextContainer {
+    
+    max-width: 350px;
+    padding-left: 20px;
+}
+
+.thirdSectionItem .descrTextContainer{
+text-align: start;
+}
+
+.thirdSectionRow img{
+    max-width: 350px;
+    max-height: 350px;
+}
+
+.thirdSectionItem:nth-of-type(2){
+    flex-direction: column-reverse;
+    top: -50px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .thirdSectionItem img{
+        width: 300px;
+        height: 300px;
+        
+    }
+
+
+    .thirdSectionItem p{
+        font-size: 25px;
+    }
+    }
+
+
+    @media screen and (max-width: 1050px) {
+
+
+        .descrCharacteristics {
+            margin: 0;
+        }
+        .descrSections:nth-of-type(3){
+            margin: 0;
+        }
+
+        .characteristicsItem {
+            font-size: 10px;
+            min-width: 30px;
+        }
+
+        .secondSectionCharImg {
+            width: auto;
+            height: auto;
+            max-width: 400px;
+            max-height: 400px;
+            
+        }
+        .thirdSectionItem:nth-of-type(2){
+            flex-direction: column;
+        }
+
+        .thirdSectionItem p{
+            font-size: 20px;
+        }
+        .thirdSectionItem:nth-of-type(2) {
+            top: 0;
+        }
+
+        .descrTextContainer:nth-child(3),.descrTextContainer:nth-child(5),.descrTextContainer:nth-child(7),.descrTextContainer:nth-child(9),.descrTextContainer:nth-child(11),.descrTextContainer:nth-child(13){
+            font-size: 12px;
+        }
+
+    }
+
+        @media screen and (max-width: 900px) {
+            .descrTextContainer h1{
+                font-size: 35px;
+            }
+            .secondSectionRow{
+                flex-direction: column;
+                align-items: center;
+            }
+            .thirdSectionItem p{
+                font-size: 18px;
+            }
+            
+            .descrSections:nth-of-type(3) {
+                margin: 0 0 0 0;
+            }
+            .thirdSectionRow{
+                margin: 0 0 0 0;
+            }
+            .descrTextContainer h1{
+                font-size: 30px;
+            }
+            
+
+            .characteristicsItem {
+                font-size: 8px;
+                min-width: 20px;
+            }
+
+            .special .descrTextContainer {
+                height: 40px;
+            }
+
+            
+            .itemCharImg {
+                height: 25px;
+                max-width: fit-content;
+            }
+    
+            }
+
+            @media screen and (max-width: 700px){
+
+
+            .special .descrTextContainer{
+                    margin: 0;
+                    text-align: center;
+                    padding: 0;
+                }
+
+                .special,.thirdSectionItem:nth-of-type(2) {
+                    flex-direction: column-reverse;
+                }
+            }
+
+            @media screen and (max-width: 450px){
+
+                .mainText{
+                    bottom: -185px;
+                }
+                .mainPicture {
+                    bottom: 100px;
+                }
+
+                .descrCharacteristics .descrTextContainer{
+                    font-size: 8px;
+                }
+                .characteristicsItem{
+                    justify-content: flex-start;
+                    max-width: 40px;
+                }
+                .descrCharacteristics {
+                    flex-wrap: nowrap;
+                }
+                .descrTextContainer:nth-child(2),.descrTextContainer:nth-child(4),.descrTextContainer:nth-child(6),.descrTextContainer:nth-child(8),.descrTextContainer:nth-child(10),.descrTextContainer:nth-child(12){
+                    font-size: 7px;
+                }
+                }
+
+
+            @media screen and (max-width: 375px) {
+                .descrTextContainer h1{
+                    font-size: 20px;
+                }
+                .secondSectionCharImg{
+                    max-width: 320px;
+                    max-height: 320px;
+            }
+
+            .mainText{
+                bottom: -150px;
+                margin: 0 auto;
+                max-width: 280px;
+            }
+            .mainPicture {
+                bottom: 80px;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+        .mainText{
+            bottom: -150px;
+        }
+
+    }
+
+        
